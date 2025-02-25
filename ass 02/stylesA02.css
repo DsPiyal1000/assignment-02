@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 0;
+}
+
+
+.input-section {
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#deposit-btn {
+    background: #4CAF50;
+    color: #fff;
+}
+
+#withdraw-btn {
+    background: #f44336;
+    color: #fff;
+}
+
+#deposit-btn:hover {
+    background: #45a049;
+}
+
+#withdraw-btn:hover {
+    background: #e53935;
+}
+
+.history-section {
+    margin-top: 20px;
+}
+
+.history-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#transaction-history {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#transaction-history li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
